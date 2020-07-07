@@ -1,0 +1,44 @@
+{
+  "name": "bestprice",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "jest-expo": "25.0.0",
+    "react-native-scripts": "^1.13.1",
+    "react-test-renderer": "16.2.0"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "core-js": "^2.5.4",
+    "expo": "^25.0.0",
+    "native-base": "^2.4.1",
+    "react": "^16.2.0",
+    "react-base": "^0.2.0",
+    "react-native": "^0.52.0",
+    "react-native-barcode-builder": "^1.0.5",
+    "react-native-barcodescanner": "^3.1.1",
+    "react-native-camera": "^1.0.3",
+    "react-native-card-list": "^0.1.0",
+    "react-native-datepicker": "^1.6.0",
+    "react-native-dialog": "^3.3.0",
+    "react-native-elements": "^0.19.0",
+    "react-native-icons": "^0.7.1",
+    "react-native-picker": "^4.3.5",
+    "react-native-qrcode-scanner": "0.0.30",
+    "react-native-select-list": "^1.0.5",
+    "react-native-simple-login": "^1.1.0",
+    "react-native-table-component": "^1.1.7",
+    "react-native-vector-icons": "^4.5.0",
+    "react-navigation": "^1.5.9"
+  }
+}

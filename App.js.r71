@@ -1,0 +1,81 @@
+import React,{Component} from 'react';
+import {View, Text} from 'react-native'
+
+
+import Accueil from './components/Accueil';
+import Scanne from './components/Scanne';
+import Connexion from './components/Connexion';
+import Inscription from './components/Inscription';
+import AjoutArticle from './components/AjoutArticle';
+import Liste_courses from './components/ListeCourses';
+import carte_fidelite from './components/carte_fidelite'
+import Magasin from './components/Magasin'
+import Favoris from './components/Favoris'
+import Ajouter_article from './components/AjoutArticle'
+import Article_scanne_non_connecte from './components/ArticleScanneNonConnecte';
+import Article_scanne_connecte from './components/ArticleScanneConnecte';
+import Apropos from './components/Apropos';
+import FicheArticle from './components/FicheArticle';
+import CompPrixDate from './components/CompPrixDate';
+import ComparaisonDate from './components/ComparaisonDate';
+import Search from './components/Search';
+import ListeMagasin from './components/ListeMagasin';
+import listefavoris from './components/listefavoris';
+import { StackNavigator, DrawerNavigator } from 'react-navigation'; // 1.1.1
+
+class App extends Component{
+
+  render(){
+    return (
+      <Appp/>
+      )
+  }
+  
+}
+
+
+const Drawernavigation =DrawerNavigator({
+    Accueil:{screen:Accueil},
+    Scanne : {screen:Scanne , navigationOptions: { title: 'Scanner' } },
+    Search : {screen: Search, navigationOptions: {title : 'Chercher article'}},
+    Liste_courses:{screen:Liste_courses , navigationOptions: { title: 'Liste Courses' } },
+    carte_fidelite : {screen:carte_fidelite , navigationOptions: { title: 'Carte fidelité' } },
+    Magasin : {screen:Magasin , navigationOptions: { title: 'Magasins' } },
+    listefavoris : {screen:listefavoris , navigationOptions: { title: 'Mes favoris' } },
+    
+  
+},
+
+); 
+
+
+const Appp = StackNavigator({
+    
+      Accueil:{ screen:Drawernavigation},
+      Connexion:{ screen : Connexion},
+      Inscription :{screen:Inscription, navigationOptions: { title: 'Inscription' }  },
+      Scanne:{screen :Scanne},
+      Search : {screen : Search }, 
+      AjoutArticle : {screen:AjoutArticle},
+      Article_scanne_non_connecte : {screen:Article_scanne_non_connecte},
+      Article_scanne_connecte : {screen:Article_scanne_connecte},
+      Liste_courses : {screen:Liste_courses},
+      Magasin : {screen:Magasin},
+      FicheArticle:{screen:FicheArticle},
+      CompPrixDate: {screen: CompPrixDate},
+      ComparaisonDate: {screen: ComparaisonDate},
+      ListeMagasin : {screen:ListeMagasin},
+      listefavoris : {screen:listefavoris}, 
+
+
+},
+  {
+  initialRouteName:'Accueil',
+  headerMode: 'float',
+  navigationOptions: {
+  headerStyle: {backgroundColor: '#E77777'},
+  headerTintColor: 'white'
+  }
+});
+
+export default App
