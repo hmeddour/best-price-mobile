@@ -24,7 +24,7 @@
     "native-base": "^2.4.1",
     "react": "^16.2.0",
     "react-base": "^0.2.0",
-    "react-native": "^0.52.0",
+    "react-native": "^0.70.6",
     "react-native-barcode-builder": "^1.0.5",
     "react-native-barcodescanner": "^3.1.1",
     "react-native-camera": "^1.0.3",
