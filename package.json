@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "jest-expo": "25.0.0",
-    "react-native-scripts": "^1.13.1",
+    "jest-expo": "47.0.1",
+    "react-native-scripts": "^2.0.1",
     "react-test-renderer": "16.2.0"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -20,11 +20,11 @@
   },
   "dependencies": {
     "core-js": "^2.5.4",
-    "expo": "^25.0.0",
+    "expo": "^47.0.13",
     "native-base": "^2.4.1",
     "react": "^16.2.0",
     "react-base": "^0.2.0",
-    "react-native": "^0.52.0",
+    "react-native": "^0.70.6",
     "react-native-barcode-builder": "^1.0.5",
     "react-native-barcodescanner": "^3.1.1",
     "react-native-camera": "^1.0.3",
